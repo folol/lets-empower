@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PageTwoReg"
+    tools:showIn="@layout/activity_page_two_reg">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/msg_urgent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        android:hint="Message to send in emergency" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/pol_num"
+        android:layout_below="@+id/msg_urgent"
+        android:layout_centerHorizontal="true"
+        android:hint="Near Staion Police Phone Number"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/emer_contact_one"
+        android:layout_below="@+id/pol_num"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        android:hint="Emergency Contact " />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_one"
+        android:src="@drawable/womenaa2"
+        android:layout_alignBottom="@+id/emer_contact_one"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/emer_contact_two"
+        android:layout_below="@+id/imageButton_one"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        android:hint="Emergency Contact" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_two"
+        android:layout_alignBottom="@+id/emer_contact_two"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/womenaa2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/emer_contact_three"
+        android:hint="Emergency Contact"
+        android:layout_alignBottom="@+id/imageButton_three"
+        android:layout_alignLeft="@+id/emer_contact_two"
+        android:layout_alignStart="@+id/emer_contact_two" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_three"
+        android:layout_below="@+id/emer_contact_two"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/womenaa2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_four"
+        android:src="@drawable/womenaa4"
+        android:layout_below="@+id/emer_contact_three"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#FFFFFF" />
+</RelativeLayout>
