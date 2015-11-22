@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="E-mail address    "
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="Address"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Police Phone Number"
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        android:text="Phone Number"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact 1"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        android:text="Phone Number"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact 2"
+        android:id="@+id/textView6"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        android:text="Phone Number"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact 3"
+        android:id="@+id/textView7"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_margin="10dip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        android:text="Phone Number"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

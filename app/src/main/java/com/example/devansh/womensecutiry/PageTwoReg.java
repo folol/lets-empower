@@ -39,6 +39,12 @@ public class PageTwoReg extends AppCompatActivity {
         next_button = (ImageButton)findViewById(R.id.imageButton_four);
 
 
+        contact_picker_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
