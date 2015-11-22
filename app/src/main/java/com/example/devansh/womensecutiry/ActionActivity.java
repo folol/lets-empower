@@ -103,7 +103,7 @@ public class ActionActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data){
 
         recordAudio();
-      //  sendMessage();
+        sendMessage();
        //playAudio();
        finish();
     }
@@ -130,8 +130,16 @@ public class ActionActivity extends AppCompatActivity {
 
     //@TargetApi(21)
     public void sendMessage() {
+        SharedPreferences pref=getSharedPreferences("info_details", Context.MODE_PRIVATE);
+        String emerg1=pref.getString("EMER_CONTACT_ONE", "100");
+        String emerg2=pref.getString("EMER_CONATCT_TWO", "100");
+        String emerg3=pref.getString("EMER_CONTACT_THREE","100");
+        String message=pref.getString("MESSAGE", "Help Me! Please Come And Pick Me UP!!");
+        message=message+" at Latitude: "+latitude+" and Longitude: "+longitude;
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage("+918527760646", null, "sms message", null, null);
+        smsManager.sendTextMessage(emerg1, null, message, null, null);
+        smsManager.sendTextMessage(emerg2, null, message, null, null);
+        smsManager.sendTextMessage(emerg3, null, message, null, null);
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
         File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
         File myPath = new File(directory,"profile.jpg");
