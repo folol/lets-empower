@@ -31,7 +31,7 @@ public class ActionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_widget);
 
-        getLocation();
+
 
        // sendPickupMessage();
 
@@ -49,7 +49,7 @@ public class ActionActivity extends AppCompatActivity {
         mp.setOutputFormat(MediaRecorder.OutputFormat.AAC_ADTS);
         mp.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
         //ContextWrapper cw=new ContextWrapper(getApplicationContext());
-        Toast.makeText(getApplicationContext(),"place 2",Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),"place 2",Toast.LENGTH_LONG).show();
         //mp.setOutputFile(cw.getDir("VoiceDir", Context.MODE_PRIVATE).getPath()+"/voice1.aac");
         /*File f=new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.aac");
         try
@@ -68,7 +68,7 @@ public class ActionActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Start Recording",Toast.LENGTH_LONG).show();
             mp.start();
 
-            Toast.makeText(getApplicationContext(), "Stop Recording", Toast.LENGTH_LONG).show();
+           // Toast.makeText(getApplicationContext(), "Stop Recording", Toast.LENGTH_LONG).show();
             //mp.stop();
             //mp.release();
         }catch(Exception e)
@@ -102,14 +102,15 @@ public class ActionActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data){
 
-        recordAudio();
         sendMessage();
+        recordAudio();
        //playAudio();
        finish();
     }
 
     public void getLocation() {
         gps = new GPSTracker(ActionActivity.this);
+
 
         // check if GPS enabled
         if (gps.canGetLocation()) {
@@ -118,7 +119,7 @@ public class ActionActivity extends AppCompatActivity {
             longitude = gps.getLongitude();
 
             // \n is for new line
-          //  Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
         } else {
             // can't get location
             // GPS or Network is not enabled
@@ -130,6 +131,8 @@ public class ActionActivity extends AppCompatActivity {
 
     //@TargetApi(21)
     public void sendMessage() {
+
+        getLocation();
         SharedPreferences pref=getSharedPreferences("info_details", Context.MODE_PRIVATE);
         String emerg1=pref.getString("EMER_CONTACT_ONE", "100");
         String emerg2=pref.getString("EMER_CONATCT_TWO", "100");
